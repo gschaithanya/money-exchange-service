@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mariadb:
+    image: mariadb:10.5
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_USER: exchange
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: exchange_db
+    ports:
+      - "3306:3306"
+
